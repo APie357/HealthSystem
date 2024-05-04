@@ -15,7 +15,7 @@ public class HealthController : MonoBehaviour
     public void Damage(float amount)
     {
         currentHealth -= amount;
-        if (currentHealth < 0f)
+        if (currentHealth <= 0f)
         {
             currentHealth = 0f;
             isDead = true;
